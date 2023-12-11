@@ -1,0 +1,1 @@
+select rooms.room_name from rooms join students on rooms.room_id = students.room_id where students.student_sex in ('M', 'F') group by rooms.room_name having count(distinct students.student_sex) = 2

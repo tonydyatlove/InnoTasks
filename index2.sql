@@ -1,0 +1,1 @@
+create index room_name_index on rooms (room_name)

@@ -1,0 +1,1 @@
+create index student_birthday_index on students (student_birthday)

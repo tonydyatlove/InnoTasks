@@ -1,0 +1,1 @@
+select rooms.room_name, avg(age(students.student_birthday)) as average_age from rooms join students on rooms.room_id = students.room_id group by rooms.room_name order by average_age asc limit 5

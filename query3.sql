@@ -1,0 +1,1 @@
+select rooms.room_name, age(max(students.student_birthday), min(students.student_birthday)) as difference from rooms join students on rooms.room_id = students.room_id group by rooms.room_name order by difference desc limit 5

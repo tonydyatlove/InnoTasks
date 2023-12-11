@@ -1,0 +1,1 @@
+select rooms.room_name, count(students.student_id) as amount_of_students from rooms left join students on rooms.room_id = students.room_id group by rooms.room_name
